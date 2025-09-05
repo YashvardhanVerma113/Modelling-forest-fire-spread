@@ -17,7 +17,7 @@ build/
 .ipynb_checkpoints/
 
 # Data directories
-data/
+#data/
 
 # Geospatial data & binaries
 *.tif
