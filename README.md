@@ -52,4 +52,18 @@ Just shorthand for output file path. This is where the raster will be saved.
 
 The rest of the script is as follows:
 We create a new directoru called "grid" where our 30m template is created and stored. We then read from AOI and write to our CRS; we also define our x and y min max bounds. the rasterio.open() is then used with "with" to create a connection our geospatial raster.
-    
+
+## DEM preperation script:
+We must once again define some of our variables here:
+### DEM_IN: 
+Raw DEM file that was downloaded
+### DEM_CLIP:
+The new fitted DEM file that was clipped according to our AOI
+### DEM_30:
+New DEM file fitted to template
+### Slope:
+DEM with angle of elevation 
+### Aspect:
+DEM with compass direction
+
+There are three sections to this script. The clipping, the warping and the slope/aspect. The clipping: takes the raw DEM which includes and area greater than that needed and cuts it down so it contains only the pixels defined by the AOI. The cliiping saves disk space, makes the processing faster as there is literally less data. The warping: takes the clipped DEM and and forces it to align with the template grid. This is so our DEM is in the correct coordinate system and thus every raster shares the same CRS. The third and last part is to fit the correct slope and aspect. 
