@@ -7,35 +7,35 @@ This project can be modified for any region and any form of spread that can be m
 
 ## File Structure:
 
-forestfire/
-├── data/
-│ ├── aoi/ # (Area Of Interest) boundary (GeoJSON/Shapefile)
-│ ├── dem/ # DEM tiles (GeoTIFF) 
-│ ├── lulc/ # Land Use/Land Cover rasters (10–30 m)
-│ ├── weather/ # ERA5/IMD/MOSDAC downloads (NetCDF/GeoTIFF)
-│ ├── human/ # GHSL built-up, OSM roads (rasters/vectors)
-│ └── fires/ # VIIRS active fire archives (CSV/SHP)
-├── grid/
-│ ├── template_30m.tif # the reference grid (CRS, transform, extent)
-│ └── masks/ # AOI mask, water mask, etc.
-├── notebooks/ # Optional EDA
-├── src/
-│ ├── make_template_grid.py
-│ ├── prepare_dem.py
-│ ├── prepare_lulc.py
-│ ├── prepare_humans.py
-│ ├── prepare_weather.py
-│ ├── prepare_labels.py
-│ ├── stack_features.py
-│ ├── train_rf.py
-│ ├── predict_nextday.py
-│ ├── run_ca.py
-│ ├── utils_geo.py
-│ └── config.py
-├── predictions/
-├── simulation/
-├── reports/
-└── README.md
+forestfire/<br />
+├── data/ <br />
+│ ├── aoi/ # (Area Of Interest) boundary (GeoJSON/Shapefile) <br />
+│ ├── dem/ # DEM tiles (GeoTIFF) <br />
+│ ├── lulc/ # Land Use/Land Cover rasters (10–30 m) <br />
+│ ├── weather/ # ERA5/IMD/MOSDAC downloads (NetCDF/GeoTIFF) <br />
+│ ├── human/ # GHSL built-up, OSM roads (rasters/vectors) <br />
+│ └── fires/ # VIIRS active fire archives (CSV/SHP)<br />
+├── grid/ <br />
+│ ├── template_30m.tif # the reference grid (CRS, transform, extent)<br />
+│ └── masks/ # AOI mask, water mask, etc.<br />
+├── notebooks/ # Optional EDA<br />
+├── src/<br />
+│ ├── make_template_grid.py<br />
+│ ├── prepare_dem.py<br />
+│ ├── prepare_lulc.py<br />
+│ ├── prepare_humans.py<br />
+│ ├── prepare_weather.py<br />
+│ ├── prepare_labels.py<br />
+│ ├── stack_features.py<br />
+│ ├── train_rf.py<br />
+│ ├── predict_nextday.py<br />
+│ ├── run_ca.py<br />
+│ ├── utils_geo.py<br />
+│ └── config.py<br />
+├── predictions/<br />
+├── simulation/<br />
+├── reports/<br />
+└── README.md<br />
 ## Extract Script:
 Using geopandas we reade the shapefile we downloaded and converts it into a geojson. 
 ## Grid Template:
