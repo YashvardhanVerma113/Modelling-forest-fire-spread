@@ -1,0 +1,57 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ForestFire/        # your old committed venv folder
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build/packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Data directories
+data/
+
+# Geospatial data & binaries
+*.tif
+*.tiff
+*.img
+*.vrt
+*.asc
+*.bil
+*.hdr
+*.ovr
+*.aux.xml
+*.gpkg
+*.sqlite
+*.mbtiles
+*.geojson.zip
+*.zip
+*.7z
+*.rar
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.qpj
+*.sbn
+*.sbx
+
+# ML/data artifacts
+*.npy
+*.npz
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.joblib
+*.parquet
+*.feather
