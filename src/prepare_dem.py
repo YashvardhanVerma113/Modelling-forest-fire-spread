@@ -53,4 +53,3 @@ with rasterio.open(DEM_30) as dem:
     with rasterio.open(Slope, 'w', **prof) as dst: dst.write(slope, 1)
     with rasterio.open(Aspect,'w', **prof) as dst: dst.write(aspect, 1)
 print(f"[ok] wrote {Slope} & {Aspect}")
-
